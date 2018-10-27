@@ -9,8 +9,8 @@ class App extends Component {
 
         this.state = {
             pickedColor: "#B3B3B3",
-            width: 1,
-            height: 2,
+            width: 0,
+            height: 0,
             stitchesWidth: [],
             stitchesHeight: [],
         };
@@ -31,6 +31,13 @@ class App extends Component {
 
     generateChart = (e) => {
         e.preventDefault();
+
+            if (this.state.stitchesWidth.length>0){
+                    this.setState({
+                    stitchesWidth: [],
+                        stitchesHeight: [],
+                });}
+
         for (let i = 1; i <= this.state.width; i++) {
             this.state.stitchesWidth.push(i);
         }
@@ -38,14 +45,21 @@ class App extends Component {
         for (let i = 0; i < this.state.height; i++) {
             this.state.stitchesHeight.push(this.state.stitchesWidth);
         }
-        console.log(this.state.stitchesHeight);
+
+        this.setState({});
     }
 
 
     render() {
-        let BoxList = this.state.stitchesWidth.map((elem, index) =>
-            <Box color={this.state.pickedColor} key={index}/>
+
+        let Rows = this.state.stitchesWidth.map((elem, index) => {
+                return <Box color={this.state.pickedColor} key={index}/>
+            }
         );
+
+        let AllStitches=this.state.stitchesHeight.map((elem,index)=>{
+            return <div className="rows" key={index}> {Rows} </div>
+        });
 
         return (
             <div className="App">
@@ -68,9 +82,8 @@ class App extends Component {
                     color={this.state.pickedColor}
                     onChangeComplete={this.handleChangeComplete}/>
 
-
                 <div className="knittingBox">
-                    {BoxList}
+                    {AllStitches}
                 </div>
             </div>
         );

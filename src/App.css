@@ -1,4 +1,8 @@
 .App{
+  background-image: url("images/close-up-colors-design-1421253.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -13,6 +17,7 @@
 
 .knittingBox{
   margin-top: 50px;
+  display: flex;
 }
 .input {
 width: 60px;
