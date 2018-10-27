@@ -36,6 +36,8 @@ class App extends Component {
                     this.setState({
                     stitchesWidth: [],
                         stitchesHeight: [],
+                        width: 0,
+                        height: 0,
                 });}
 
         for (let i = 1; i <= this.state.width; i++) {
@@ -74,7 +76,7 @@ class App extends Component {
                            value={this.state.height}
                            onChange={this.handleChangeHeight}/>
                     <button
-                        onClick={this.generateChart}>Ok!
+                        onClick={this.generateChart}>{this.state.stitchesWidth.length>0?"Clear!":"Ok!"}
                     </button>
 
                 </div>
