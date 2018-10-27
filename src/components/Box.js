@@ -7,8 +7,8 @@ class Box extends Component {
         super(props);
 
         this.state = {
-            bgColor: "#B3B3B3",
-            defaultColor: "#B3B3B3",
+            bgColor:  "rgba(246, 247, 255, 0.51)",
+            defaultColor: "rgba(246, 247, 255, 0.51)",
             clicked: false,
             }
     }

@@ -17,11 +17,16 @@
   font-family: 'Poiret One', cursive;
   color: rgba(43, 43, 43, 0.85);
   flex-direction: row;
+ justify-content: center;
   margin: 10vh;
 background: rgba(246, 247, 255, 0.51);
   box-shadow: 6px 6px 5px lightgray;
 }
 
+
+.picker{
+  margin-left: 60px;
+}
 .navBox{
   display: flex;
 flex-direction: column;
@@ -29,8 +34,8 @@ flex-direction: column;
   padding: 50px;
 }
 
-h1, h2{
-  margin: 0;
+h1, h2, h3{
+  margin: 0 0 15px;
 }
 
 .title{
@@ -51,13 +56,12 @@ margin-bottom: 50px;
 }
 
 .inputBox{
-  margin-bottom: 20px;
 }
 
 .input {
   font-size: 20px;
 background: rgba(255, 238, 245, 0.73);
- width: 50px;
+ width: 40px;
 padding: 10px;
   text-align: center;
   margin: 20px;

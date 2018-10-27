@@ -8,9 +8,9 @@ class App extends Component {
         super(props);
 
         this.state = {
-            pickedColor: "#B3B3B3",
-            width: 0,
-            height: 0,
+            pickedColor: "#f44336",
+            width: "",
+            height: "",
             stitchesWidth: [],
             stitchesHeight: [],
         };
@@ -36,8 +36,8 @@ class App extends Component {
             this.setState({
                 stitchesWidth: [],
                 stitchesHeight: [],
-                width: 0,
-                height: 0,
+                width: "",
+                height: "",
             });
         }
 
@@ -71,7 +71,7 @@ class App extends Component {
 
                     <div className="navBox">
                         <h1 className="title">Knitting pattern generator</h1>
-                        <h2>Type dimensions of your pattern</h2>
+                        <h2>type in dimensions of your pattern:</h2>
                         <div className="inputBox">
                             <input type="number" className="input"
                                    value={this.state.width}
@@ -87,11 +87,15 @@ class App extends Component {
                             </button>
                         </div>
 
-                        <CirclePicker
-                            width="300px"
-                            circleSize={35}
-                            color={this.state.pickedColor}
-                            onChangeComplete={this.handleChangeComplete}/>
+                        <div className="picker">
+                            <h3>pick a color:</h3>
+                            <CirclePicker
+                                width="400px"
+                                circleSize={45}
+                                color={this.state.pickedColor}
+                                onChangeComplete={this.handleChangeComplete}/>
+                        </div>
+
 
                     </div>
 
