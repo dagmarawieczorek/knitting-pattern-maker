@@ -1,8 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
 import Box from "./components/Box.js";
+import { CompactPicker } from 'react-color';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            pickedColor: "#B3B3B3"
+        };
+    }
+
     render() {
         return (
             <div className="App">
@@ -14,8 +23,9 @@ class App extends Component {
                     <button>Ok!</button>
 
                 </div>
+                <CompactPicker/>
 
-                <Box/>
+                <Box color={this.state.pickedColor}/>
             </div>
         );
     }
