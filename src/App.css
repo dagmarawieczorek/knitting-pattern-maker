@@ -11,6 +11,9 @@
   border: 1px solid black;
 }
 
+.knittingBox{
+  margin-top: 50px;
+}
 .input {
 width: 60px;
   padding:10px;
