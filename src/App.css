@@ -1,28 +1,77 @@
 .App{
-  background-image: url("images/close-up-colors-design-1421253.jpg");
+  background: linear-gradient(rgba(246, 247, 255, 0.21), rgba(255,255,255,0.3)), url("images/close-up-colors-design-1421253.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 
-  flex-direction: column;
-  align-items: center;
-  padding: 100px;
 }
 
+.container{
+  display: flex;
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+  color: rgba(43, 43, 43, 0.85);
+  flex-direction: row;
+  margin: 10vh;
+background: rgba(246, 247, 255, 0.51);
+  box-shadow: 6px 6px 5px lightgray;
+}
+
+.navBox{
+  display: flex;
+flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+h1, h2{
+  margin: 0;
+}
+
+.title{
+  font-family: 'Srisakdi', cursive;
+}
 .box{
-  width: 30px;
-  height:30px;
-  border: 1px solid black;
+  width: 20px;
+  height:20px;
+  border: 1px dotted gray;
 }
 
 .knittingBox{
-  margin-top: 50px;
+margin-right: 50px;
+margin-top: 50px;
+margin-bottom: 50px;
   display: flex;
-}
-.input {
-width: 50px;
 
+}
+
+.inputBox{
+  margin-bottom: 20px;
+}
+
+.input {
+  font-size: 20px;
+background: rgba(255, 238, 245, 0.73);
+ width: 50px;
+padding: 10px;
+  text-align: center;
   margin: 20px;
+}
+
+.button{
+  font-size: 20px;
+  background: rgba(255, 238, 245, 0.73);
+  min-width: 50px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+.multiply{
+  font-weight: bolder;
 }
