@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/knitting-pattern-maker/precache-manifest.ecc6455b2f80cab7d23411a97b36718d.js"
+  "/knitting-pattern-maker/precache-manifest.d1795ec2d0c71da214857e86a6b5e44f.js"
 );
 
 workbox.clientsClaim();
