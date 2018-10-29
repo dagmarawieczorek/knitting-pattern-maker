@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/knitting-pattern-maker/static/js/runtime~main.bf8aa2a4.js"
   },
   {
-    "revision": "cb5127ab0e25ff4d02d3",
-    "url": "/knitting-pattern-maker/static/js/main.cb5127ab.chunk.js"
+    "revision": "a8e53b8ab0ed3e27c13a",
+    "url": "/knitting-pattern-maker/static/js/main.a8e53b8a.chunk.js"
   },
   {
     "revision": "ec759c04b7aa239d4577",
     "url": "/knitting-pattern-maker/static/js/1.ec759c04.chunk.js"
   },
   {
-    "revision": "cb5127ab0e25ff4d02d3",
-    "url": "/knitting-pattern-maker/static/css/main.cca84df4.chunk.css"
+    "revision": "a8e53b8ab0ed3e27c13a",
+    "url": "/knitting-pattern-maker/static/css/main.3f53c34b.chunk.css"
   },
   {
-    "revision": "41ab75fe2c8b7044ab8be9f0afaaadb9",
+    "revision": "fb9c44bb193e84e76bec69969a088c48",
     "url": "/knitting-pattern-maker/index.html"
   }
 ];
