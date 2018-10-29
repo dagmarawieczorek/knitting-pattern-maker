@@ -23,6 +23,11 @@ background: rgba(246, 247, 255, 0.51);
   box-shadow: 6px 6px 5px lightgray;
 }
 
+.rows{
+    font-size: 15px;
+    font-weight: bold;
+
+}
 
 .picker{
   margin-left: 60px;

@@ -55,13 +55,15 @@ class App extends Component {
 
     render() {
 
+
         let Rows = this.state.stitchesWidth.map((elem, index) => {
                 return <Box color={this.state.pickedColor} key={index}/>
             }
         );
 
         let AllStitches = this.state.stitchesHeight.map((elem, index) => {
-            return <div className="rows" key={index}> {Rows} </div>
+                return <div className="rows" key={index}> {index + 1} {Rows} {index + 1}</div>
+
         });
 
 
@@ -100,6 +102,7 @@ class App extends Component {
                     </div>
 
                     <div className="knittingBox">
+
                         {AllStitches}
 
                     </div>
