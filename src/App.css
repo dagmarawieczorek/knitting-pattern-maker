@@ -8,6 +8,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
+    box-sizing: border-box;
 
 }
 
@@ -26,6 +27,8 @@ background: rgba(246, 247, 255, 0.51);
 .rows{
     font-size: 15px;
     font-weight: bold;
+    display:flex;
+    flex-direction: row;
 
 }
 
@@ -53,13 +56,21 @@ h1, h2, h3{
 }
 
 .knittingBox{
-margin-right: 50px;
-margin-top: 50px;
-margin-bottom: 50px;
   display: flex;
-
+flex-direction: column-reverse;
+    justify-content: center;
 }
-
+.counter{
+    width: 22px;
+    height:20px;
+    display: block;
+    text-align: center;
+}
+.columnBox{
+    display:flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+}
 .inputBox{
 }
 

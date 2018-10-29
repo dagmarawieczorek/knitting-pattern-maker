@@ -50,20 +50,25 @@ class App extends Component {
         }
 
         this.setState({});
+        console.log()
     }
 
 
     render() {
 
 
-        let Rows = this.state.stitchesWidth.map((elem, index) => {
-                return <Box color={this.state.pickedColor} key={index}/>
-            }
-        );
+let CounterColumns= this.state.stitchesWidth.map((elem, index) => {
+    return <span className="counter rows"> {index + 1}</span>
+});
+
+
 
         let AllStitches = this.state.stitchesHeight.map((elem, index) => {
-                return <div className="rows" key={index}> {index + 1} {Rows} {index + 1}</div>
+            return <div className="rows" key={index}><span className="counter"> {index + 1}</span>
+                {this.state.stitchesWidth.map((elem, index2) => {
+                    return <div><Box color={this.state.pickedColor} key={index2}/></div>})}
 
+                <span className="counter"> {index + 1}</span></div>
         });
 
 
@@ -102,9 +107,13 @@ class App extends Component {
                     </div>
 
                     <div className="knittingBox">
-
+                        <div className="columnBox">
+                        {CounterColumns}
+                        </div>
                         {AllStitches}
-
+                        <div className="columnBox">
+                            {CounterColumns}
+                        </div>
                     </div>
 
                 </div>
